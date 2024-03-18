@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+#navigation a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: #FFFFFF;
+    
+}
+
+#profile-pic {
+    width: 500px;
+    
+}
+
+#social-buttons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%; 
+    max-width: 900px;
+}
+
+#profile-info {
+    text-align: right;
+}
+
+#social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-weight: 500;
+}
+h3{
+    text-justify: right;
+    font-size: 24px;
+    width: 500px;
+    font-weight: 500;
+}
+
+.skill{
+    width: 300px;
+    margin: 80px auto;
+    color: #fff;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 15px;
+}
+
+.skill li{
+    margin: 14px 0;
+    padding: 7.5px;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+    height: 15px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1.0)100%);
+}
+.html{
+    width: 60%;
+    animation: html 3s;
+}
+.css{
+    width: 45%;
+    animation: css 3s;
+}
+.php{
+    width: 55%;
+    animation: php 3s;
+}
+.c{
+    width: 34%;
+    animation: c 3s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+
+@keyframes php {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+
+@keyframes c {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 34%;
+    }
+}
+
+#cv{
+    margin-bottom: 3em;
+}
+
+#text-download h1{
+    display: flex;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#download {
+    display: flex;
+    justify-content: center;
+}
+
+#download a{
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 15px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 25px;
+    }    
+
+    #profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navigation a {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+        margin-right: 15px;
+    }
+    
+    #profile-info {
+        text-align: center;
+    }
+
+    #social-buttons {
+        margin-top: 20px;
+    }
+
+    .skill {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .bar {
+        width: 100%;
+    }
+
+    h3 {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+
+    #profile-pic, #profile-info {
+        text-align: center;
+    }
+
+    #download a{
+        width: 50%;
+    }
+}
